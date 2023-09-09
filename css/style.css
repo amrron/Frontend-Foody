@@ -1,0 +1,410 @@
+:root {
+    --blue: #17184f;
+    --light-blue: #dbf3fb;
+    --pink: #fdced0
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* START NAV */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--light-blue);
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo a {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.link {
+    transition: ease-in .4s;
+}
+
+.link ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.link ul a {
+    font-size: 25px;
+    color: var(--blue);
+}
+
+.link .register-login {
+    display: none;
+}
+
+.register-login {
+    display: flex;
+    align-items: center;
+}
+
+.register-btn, .login-btn {
+    padding: 10px 0;
+    width: 100px;
+    text-align: center;
+}
+
+.register-btn {
+    
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+.login-btn {
+    color: var(--blue);
+    background-color: var(--light-blue);
+}
+
+.signup {
+    display: flex;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 30px;
+    height: 5px;
+    background-color: var(--blue);
+    transition: ease .4s;
+}
+
+.burger-close span:nth-child(1) {
+    transform-origin: top left ;
+    rotate: 45deg;
+}
+
+.burger-close span:nth-child(2) {
+    transform-origin:  right center;
+    width: 0;
+    opacity: 0;
+}
+
+.burger-close span:nth-child(3) {
+    transform-origin: bottom left;
+    rotate: -45deg;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+
+    .burger {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    #register-login {
+        display: none;
+    }
+
+    .link .register-login {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link {
+        position: absolute;
+        height: calc(100vh - 100px);
+        width: 50%;
+        min-width: 280px;
+        top: 100px;
+        right: -100%;
+        background-color: var(--blue);
+        color: var(--light-blue);
+        padding: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        z-index: 10;
+    }
+
+    .burger-visible {
+        right: 0;
+    }
+
+    .register-login {
+        margin-bottom: 20px;
+        /* border-bottom: 2px solid var(--light-blue);
+        padding-bottom: 20px; */
+    }
+
+    .link ul a {
+        color: var(--light-blue);
+    }
+
+    .register-btn {
+        background-color: var(--light-blue);
+        color: var(--blue);
+    }
+
+    .login-btn {
+        background-color: var(--pink);
+        color: var(--blue);
+    }
+
+    .login-btn, .register-btn {
+        border-radius: 10px;
+        padding: 10px 10px;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+}
+/* END NAV */
+
+/* START FOOTER */
+footer {
+    color: var(--blue);
+    background-color: var(--light-blue);
+}
+
+.top-footer {
+    min-height: 255px;
+}
+
+.top-footer ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.footer-row {
+    width: 100%;
+}
+
+.footer-send-message input {
+    height: 40px;
+    outline: 0;
+    width: calc(100% - 40px);
+    padding-left: 10px;
+    border-radius: 8px 0 0 8px;
+}
+
+.footer-send-message button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--pink);
+    border-radius: 0 8px 8px 0;
+}
+
+.select-lenguage {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.select-lenguage label {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px 0 0 8px;
+
+}
+
+.select-lenguage select {
+    height: 40px;
+    width: calc(100% - 50px);
+    outline: none;
+    background-color: #fff;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+}
+
+.bottom-footer {
+    background-color: var(--pink);
+    height: 100px;
+}
+/* END FOOTER */
+
+/* START RECOMENDATION */
+.kartu {
+    display: grid;
+    height: 360px;
+    width: 590px;
+    margin-left: 1px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #fff;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    grid-template-rows: 1 2 1 1;
+    grid-template-areas:    'judul gambar'
+                            'deskripsi gambar'
+                            'harga gambar'
+                            'tombol gambar';
+}
+
+.judul-kartu {
+    color: var(--blue);
+    grid-area: judul;
+}
+
+.deskripsi-kartu {
+    color: #606060;
+    grid-area: deskripsi;
+}
+
+.harga-kartu {
+    grid-area: harga;
+}
+
+.gambar-kartu {
+    grid-area: gambar;
+}
+
+.tombol-beli-produk {
+    width: 109px;
+    line-height: 36px;
+    background-color: var(--light-blue);
+    color: var(--blue);
+    display: block;
+    text-decoration: none;
+    border-radius: 18px;
+    grid-area: tombol;
+}
+
+.section-recomendation {
+    background: var(--linear-1, linear-gradient(210deg, #FDCED0 10.95%, #D9F4FF 86.63%));
+}
+
+.recomendation {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 590px) {
+    .kartu {
+        grid-template-areas:    'judul'
+                                'gambar'
+                                'deskripsi'
+                                'harga'
+                                'tombol';
+        width: 340px;
+        height: 560px;
+    }
+}
+/* END RECOMENDATION */
+
+/* START SWIPER */
+swiper-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 10px 0;
+}
+/* END SWIPER */
+
+/* START STYLLING TEMPLATE */
+.fs-18px {
+    font-size: 18px;
+}
+
+.fs-20px {
+    font-size: 20px;
+}
+
+.fs-13px {
+    font-size: 13px;
+}
+
+.fs-64px {
+    font-size: 64px;
+}
+
+.bg-biru {
+    background-color: var(--blue);
+}
+
+.bg-biru-muda {
+    background-color: var(--light-blue);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.text-biru {
+    color: var(--blue);
+}
+
+.text-biru-muda {
+    color: var(--light-blue);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.view-all {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+/* END STYLING TEMPLATE */
