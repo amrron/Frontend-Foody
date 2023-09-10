@@ -678,3 +678,25 @@ body::-webkit-scrollbar-thumb {
 
 
 
+.pink {
+    background-color: #FDCED0;
+    color: #131049;
+}
+
+.navy {
+    background-color: #131049;
+}
+
+.navy:hover {
+    background-color: #FDCED0;
+}
+
+.biru {
+    background-color: #D9F4FF;
+    color: #131049;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 10px;
+}
