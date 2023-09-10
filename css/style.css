@@ -390,6 +390,10 @@ swiper-slide {
     background-color: var(--pink);
 }
 
+.bg-putih {
+    background-color: #fff;
+}
+
 .text-biru {
     color: var(--blue);
 }
@@ -402,9 +406,275 @@ swiper-slide {
     color: var(--pink);
 }
 
+.no-decoration {
+    text-decoration: none;
+}
+
 .view-all {
     text-decoration: none;
     color: var(--blue);
 }
 
 /* END STYLING TEMPLATE */
+
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: #22110C;
+}
+body::-webkit-scrollbar-thumb {
+    background: #91d8ef;
+}
+
+.site-main {
+    position: relative; 
+    overflow: hidden;
+}
+
+
+/* ======================= Start Banner Area ======================= */
+.site-banner {
+    width: 100%;
+    background-color: #D9F4FF;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 64px;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 22px;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.button-banner{
+    display: inline-block;
+    background-color: #131049;
+    color: #FFF;
+    padding: .75rem 2rem;
+    border-radius: .5rem;
+    transition: .3s;
+  }
+  
+  .button-banner:hover{
+    background-color: #15495a;
+  }
+
+/* ======================= Catatanku ======================= */
+
+.site-catatanku {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.site-catatanku .site-title p {
+    margin-top: 20px;
+    max-width: 520px;
+    font-size: 18px; 
+    margin-bottom: 20px; 
+}
+
+.site-main .site-catatanku .site-title h1{
+    max-width: 550px;
+    padding-top: 35%;
+    font-size: 50px;
+}
+
+.site-main .site-catatanku .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-catatanku .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+.button-catatanku{
+    display: inline-block;
+    background-color:  #91d8ef;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: .5rem;
+    transition: .3s;
+}
+  
+.button-catatanku:hover{
+    background-color: #FDCED0;
+}
+
+
+ /* ======================= Record Makanan ======================= */ 
+/* .site-main .record-makanan{
+    padding: 10px 20px;
+} */
+
+.site-main .record-makanan .about-title h2{
+    display: block;
+    font-size: 80px;
+    max-width: 600px;
+}
+
+.para{
+    padding: 10px 0;
+    font-size: 18px;
+    max-width: 560px;
+}
+
+
+.button-record{
+    display: inline-block;
+    background-color:  #91d8ef;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: .5rem;
+    transition: .3s;
+}
+  
+.button-record:hover{
+    background-color: #FDCED0;
+}
+
+
+/* ======================= Target Kamu ======================= */
+
+.site-target {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.site-target .site-title p {
+    margin-top: 20px;
+    max-width: 520px;
+    font-size: 18px; 
+    margin-bottom: 20px; 
+}
+
+.site-main .site-target .site-title h1{
+    font-weight: bold;
+    max-width: 550px;
+    padding-top: 35%;
+    font-size: 80px;
+}
+
+.site-main .site-target .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-target .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+.button-catatanku{
+    display: inline-block;
+    background-color:  #91d8ef;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: .5rem;
+    transition: .3s;
+}
+  
+.button-catatanku:hover{
+    background-color: #FDCED0;
+}
+
+.button-target{
+    display: inline-block;
+    background-color:  #91d8ef;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: .5rem;
+    transition: .3s;
+}
+  
+.button-target:hover{
+    background-color: #FDCED0;
+}
+
+
+
+
+
+/* mobile */
+@media (max-width: 767px) {
+    .site-catatanku{
+        margin-top: -100px;
+    }
+
+    .site-catatanku .banner-image > img {
+        margin-top: -90px;
+         
+    }
+    .record-makanan{
+        margin-top: -230px;
+    }
+
+    .site-target .banner-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-target .banner-image > img {
+        margin-top: -70px;
+        max-width: 100%;
+        height: auto;  
+    }
+
+    .about-image{
+        display: none;
+    }
+
+    .about-title{
+        padding-bottom: 100px;
+    }
+
+    .about-title {
+        text-align: center; 
+        margin-top: 20px; 
+    }
+    
+    .about-title h2 {
+        font-size: 36px; 
+        max-width: 100%; 
+    }
+
+    .paragraf{
+        text-align: center;   
+    }
+
+    .button-record {
+        display: block; 
+        margin: 20px auto; 
+    }
+
+    .site-target{
+        margin-top: -100px;
+    }
+    
+}
+
+
+
