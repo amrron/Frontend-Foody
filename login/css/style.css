@@ -1,0 +1,52 @@
+.judul{
+    padding: 5px;
+    color: #131049;
+}
+
+.btn{
+    background-color: #131049;
+    color: white;
+}
+.btnSubmit{
+    background-color: #131049;
+    color: #D9F4FF;
+    border-radius: 5px;
+    outline-color: #131049;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.text_birugelap{
+    color: #131049;
+}
+
+.bg-birugelap{
+    background-color: #131049;
+}
+
+.formC{
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.contactContent{
+    padding-right: 40px;
+}
+
+.textbirumuda{
+    color: #D9F4FF;
+}
+.bg-birumuda{
+    background-color: #D9F4FF;
+}
+.textcontact{
+    padding-left: 70px;
+    padding-top: 35px;
+    padding-right: 50px;
+}
+
+.logomedsos{
+    size: lg;
+    padding: 5px;
+}
+
